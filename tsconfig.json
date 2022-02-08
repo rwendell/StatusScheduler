@@ -3,14 +3,16 @@
 		"target": "ESNEXT",
 		"module": "ESNext",
 		"moduleResolution": "node",
-		"outDir": "../",
+		//FIXME use relative export
+		"outDir": "/mnt/c/Users/Ryanj/AppData/Roaming/BetterDiscord/plugins",
 		"removeComments": false,
 		"strict": true,
 		"alwaysStrict": false,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+		"jsx": "react",
 	},
 	"include": [
-		"./src/helloworld.plugin.ts",
+		"src/StatusScheduler.plugin.ts",
 		"./src/types/**/*.d.ts"
 	],
 	"exclude": [
